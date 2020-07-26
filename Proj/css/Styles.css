@@ -1,0 +1,37 @@
+body{
+
+}
+/* navbar styles */
+#title{
+    margin: 0px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+/*Big Text Styles*/
+#bigText{
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/stock1.jpg");
+    color: white;
+    padding: 120px 80px;
+}
+
+/*About Us Styles*/
+#abtUs{
+
+}
+.abtTitle{
+    padding: 30px;
+}
+
+.Contents{
+}
+
+.abtTxt{
+    padding-left: 50px;
+}
+
+.abtImg{
+    padding-top: 30px;
+    padding-left: 70px;
+}
