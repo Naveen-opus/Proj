@@ -1,19 +1,127 @@
-body{
-
-}
+html,body{
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Sourse Sans Pro',sans-serif;
+  font-size: 16px;
+  overflow-x: hidden !important;
+  line-height: 1.8em;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: #666
+  }
+  *{
+      text-decoration: none !important;
+    }
 /* navbar styles */
 #title{
+  position: relative;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  background-color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.02);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
     margin: 0px;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
+
+
+}
+.navbar-brand{
+  font-size: 22px;
+    font-weight: bold;
+  margin-left: 25px;
+  margin-top: 25px;
+
+}
+.collapse{
+  margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#000;
+
+    margin-left: 25px;
+}
+.collapse a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.collapse a:before{
+  content: '';
+  position: absolute;;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  transform: scaleY(2);
+  opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.collapse a:hover:before
+{
+  transform: scaleY(1);
+  opacity: 1;
+
 }
 
 /*Big Text Styles*/
-#bigText{
+.bigText{
+     position: relative;
+     opacity: 0.90;
+     background-position:center;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     /*
+      fixed = parallax
+      scroll = normal
+     */
+     background-attachment: fixed;
+   }
+.bigText{
     background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/stock1.jpg");
     color: white;
-    padding: 120px 80px;
+    padding: 220px 80px;
+}
+.text1{
+
+    animation: text 3s 1;
+    top: 50%;
+    width:100%;
+    text-align: left ;
+    padding: 0px 0px 0px 30px;
+  color: #fff;
+    font-size: 10px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+@keyframes text {
+  0%{
+    color: transparent;
+  }
+  30%{
+    letter-spacing: 8px;
+  }
+  85%{
+    letter-spacing: 8px;
+  }
+
 }
 
 /*About Us Styles*/
@@ -21,7 +129,9 @@ body{
 
 }
 .abtTitle{
-    padding: 30px;
+    padding: 50px;
+    font-size: 20px;
+
 }
 
 .Contents{
@@ -29,9 +139,18 @@ body{
 
 .abtTxt{
     padding-left: 50px;
+
+}
+.btn{
+  margin-top: 20px;
+  margin-left: 200px;
 }
 
-.abtImg{
-    padding-top: 30px;
-    padding-left: 70px;
+
+.abtImg {
+
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+    width: 28vw;
 }
